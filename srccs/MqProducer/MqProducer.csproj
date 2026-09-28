@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>MqProducer</AssemblyName>
+    <RootNamespace>MqProducer</RootNamespace>
+  </PropertyGroup>
+
+  <!--
+    IBM MQ .NET client (XMS).
+    The package IBMXMSDotnetClient bundles IBM.XMS.dll and all native transport libraries.
+    Pin to a version that matches your MQ server (10.x shown here).
+  -->
+  <ItemGroup>
+    <PackageReference Include="IBMXMSDotnetClient" Version="9.4.*" />
+  </ItemGroup>
+
+</Project>
